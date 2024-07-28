@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Geller | DevOps Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .header h1 {
+            font-size: 3em; /* Increased font size for the title */
+            margin: 0.2em 0; /* Slight margin adjustment */
+        }
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 237.6px; /* 10% of original width */
+            height: 158.4px; /* 10% of original height */
+            border: 5px solid #4CAF50;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .intro, .projects, .reviews {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+        .projects, .reviews {
+            margin-top: 60px;
+        }
+        .project, .review {
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+        .project:nth-child(even), .review:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Monica Geller</h1>
+        <p>DevOps Engineer</p>
+    </div>
+
+    <img src="https://thterraformproject2024.s3.amazonaws.com/profile.jpg" alt="Monica Geller" class="profile-image">
+
+    <div class="content">
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>Hello! I'm Monica Geller, a DevOps Engineer with over 5 years of experience in automating and optimizing mission-critical deployments in AWS, Azure, and GCP. I am passionate about DevOps practices and continuous integration/continuous deployment (CI/CD).</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Alpha</h3>
+                <p>Implemented a scalable CI/CD pipeline using Jenkins and Docker, which reduced deployment times by 40% and improved reliability.</p>
+            </div>
+            <div class="project">
+                <h3>Project Beta</h3>
+                <p>Developed an automated monitoring and alerting system with Prometheus and Grafana, significantly improving system uptime and performance metrics.</p>
+            </div>
+            <div class="project">
+                <h3>Project Gamma</h3>
+                <p>Orchestrated Kubernetes clusters for high availability and load balancing, ensuring 99.9% uptime for critical applications.</p>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>John Smith</h3>
+                <p>"Monica's expertise in DevOps has been invaluable. Her ability to streamline our CI/CD processes has greatly increased our development efficiency."</p>
+            </div>
+            <div class="review">
+                <h3>Emily Johnson</h3>
+                <p>"Monica's work on our Kubernetes infrastructure was exceptional. She ensured our applications are always available and performant."</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
